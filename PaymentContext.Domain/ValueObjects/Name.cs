@@ -8,6 +8,12 @@ namespace PaymentContext.Domain.ValueObjects
         {
             FirstName = firstName;
             LastName = lastName;
+
+            if(string.IsNullOrEmpty(FirstName))            
+                AddNotification("FirstName", "Nome Invalido");
+            
+            if (string.IsNullOrEmpty(LastName))           
+                AddNotification("LastName", "Sobrenome Invalido");    
         }
 
         public string FirstName { get; private set; }
