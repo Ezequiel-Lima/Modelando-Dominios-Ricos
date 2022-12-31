@@ -10,7 +10,7 @@ namespace PaymentContext.Tests.Entities
         [TestMethod]
         public void AdicionarAssinatura()
         {
-  
+            
         }
     }
 }
